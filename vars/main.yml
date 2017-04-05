@@ -1,0 +1,4 @@
+---
+postgresql94_repo_rpm: 'https://download.postgresql.org/pub/repos/yum/9.4/redhat/rhel-7-x86_64/pgdg-redhat94-9.4-3.noarch.rpm'
+postgresql94_rpm: 'postgresql94-server'
+psycopg2: 'python-psycopg2'

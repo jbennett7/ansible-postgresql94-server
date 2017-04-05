@@ -1,0 +1,13 @@
+---
+- name: Install the postgresql94 repository on {{ ansible.hostname }}
+  command: yum -y install '{{ postgresql94_repo_rpm }}'
+
+- name: Install the package {{ postgresql94_rpm }}
+  yum:
+    name: '{{ postgresql94_rpm }}'
+    state: latest
+
+- name: Install python-psycopg2
+  yum:
+    name: '{{ psycopg2 }}'
+    state: latest
