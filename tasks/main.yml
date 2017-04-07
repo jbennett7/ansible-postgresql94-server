@@ -1,9 +1,9 @@
 ---
-- name: Install the postgresql94 repository on {{ ansible.hostname }}
+- name: Install the postgresql94 repository on {{ ansible_hostname }}
   command: yum -y install '{{ postgresql94_repo_rpm_url }}'
 
-- name: Install packages
+- name: Install packages on {{ ansible_hostname }}
   yum:
-    name: '{{ postgresql94_rpm }}'
+    name: '{{ item }}'
     state: latest
-  with_itmes: '{{ install_packages }}'
+  with_items: '{{ install_packages }}'

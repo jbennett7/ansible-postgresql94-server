@@ -3,3 +3,5 @@ postgresql94_repo_rpm_url: 'https://download.postgresql.org/pub/repos/yum/9.4/re
 install_packages:
 - 'postgresql94-server'
 - 'python-psycopg2'
+- 'python2'
+#- 'firewalld'
